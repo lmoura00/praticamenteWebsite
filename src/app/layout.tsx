@@ -11,15 +11,12 @@ const geistSans = Geist({
   subsets: ['latin'],
 });
 
-// Geist Mono is not used directly but kept for potential future use
-// const geistMono = Geist_Mono({
-//   variable: '--font-geist-mono',
-//   subsets: ['latin'],
-// });
-
 export const metadata: Metadata = {
   title: 'Praticamente - Habilidades Sociais com ABA',
   description: 'Desenvolvendo habilidades sociais em crianças e adolescentes com TEA através da Análise do Comportamento Aplicada (ABA).',
+  verification: {
+    google: '03q7RF1WQrV3pP_ctXSyQ-mgbSP8uh299fWGw7TcbVs',
+  },
 };
 
 export default function RootLayout({
@@ -32,7 +29,6 @@ export default function RootLayout({
       <body
         className={cn(
           geistSans.variable,
-          // geistMono.variable, // Removed as it's not currently used
           'antialiased min-h-screen flex flex-col'
         )}
       >
